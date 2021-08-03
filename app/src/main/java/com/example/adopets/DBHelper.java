@@ -44,4 +44,14 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor cursor = db.rawQuery("Select * from Login",null);
         return cursor;
     }
+
+    public Boolean login(String uname,String password){
+        SQLiteDatabase db =this.getWritableDatabase();
+        Cursor cursor = db.rawQuery("Select * from Login where uname = ? and password = ?", new String[] {uname,password});
+        if(cursor.getCount()>0){
+            return true;
+        }
+        else
+            return false;
+    }
 }
