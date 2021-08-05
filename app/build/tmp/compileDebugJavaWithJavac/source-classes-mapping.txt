@@ -1,0 +1,14 @@
+com/example/adopets/BuildConfig.java
+ com.example.adopets.BuildConfig
+com/example/adopets/Dog.java
+ com.example.adopets.Dog
+com/example/adopets/categories.java
+ com.example.adopets.categories
+com/example/adopets/welcome.java
+ com.example.adopets.welcome
+com/example/adopets/MainActivity.java
+ com.example.adopets.MainActivity
+com/example/adopets/DBHelper.java
+ com.example.adopets.DBHelper
+com/example/adopets/SignUp.java
+ com.example.adopets.SignUp
