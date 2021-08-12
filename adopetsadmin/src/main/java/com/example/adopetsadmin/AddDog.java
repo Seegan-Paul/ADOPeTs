@@ -1,13 +1,19 @@
 package com.example.adopetsadmin;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+//import androidx.annotation.NonNull;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -19,6 +25,7 @@ import android.widget.Toast;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
+import java.net.URI;
 
 public class AddDog extends AppCompatActivity {
 
@@ -28,7 +35,8 @@ public class AddDog extends AppCompatActivity {
 
     private static final int IMAGE_PICK=1000;
     private static final int PERMISSION_CODE=1001;
-    private Bitmap ImageStore;
+    private Bitmap imageStore;
+    private Uri imagePath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +50,7 @@ public class AddDog extends AppCompatActivity {
         sex = findViewById(R.id.editTextTextPersonName5);
         breed = findViewById(R.id.editTextTextPersonName6);
         price = findViewById(R.id.editTextTextPersonName7);
-        Price = Float.valueOf(price.getText().toString());
+//        Price = Float.valueOf(price.getText().toString());
     }
 
     public void select(View view) {
@@ -58,17 +66,10 @@ public class AddDog extends AppCompatActivity {
             //os<marshmallow
             pickImage();
         }
-
-    }
-
-    private void pickImage() {
-        Intent intent = new Intent(Intent.ACTION_PICK);
-        intent.setType("image/*");
-        startActivityForResult(intent,IMAGE_PICK);
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull @NotNull String[] permissions, @NonNull @NotNull int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case PERMISSION_CODE: {
@@ -81,18 +82,55 @@ public class AddDog extends AppCompatActivity {
         }
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable @org.jetbrains.annotations.Nullable Intent data) {
-
-        super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == RESULT_OK && requestCode == IMAGE_PICK) {
-            image.setImageURI(data.getData());
-            try {
-                ImageStore = MediaStore.Images.Media.getBitmap(getContentResolver(),data.getData());
-                Toast.makeText(this,"Success",Toast.LENGTH_LONG).show();
-            } catch (Exception e) {
-                Toast.makeText(this,e.getMessage(),Toast.LENGTH_LONG).show();
-            }
+    private void pickImage() {
+//        Intent intent = new Intent(Intent.ACTION_PICK);
+//        intent.setType("image/*");
+//        startActivityForResult(intent,IMAGE_PICK);
+        try {
+            Intent intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            resultLauncher.launch(intent);
+        } catch (Exception e) {
+            Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
+
+//    @Override
+//    protected void onActivityResult(int requestCode, int resultCode, @Nullable @org.jetbrains.annotations.Nullable Intent data) {
+//
+//        super.onActivityResult(requestCode, resultCode, data);
+//        if (resultCode == RESULT_OK && requestCode == IMAGE_PICK) {
+//            image.setImageURI(data.getData());
+//            try {
+//                ImageStore = MediaStore.Images.Media.getBitmap(getContentResolver(),data.getData());
+//                Toast.makeText(this,"Success",Toast.LENGTH_LONG).show();
+//            } catch (Exception e) {
+//                Toast.makeText(this,e.getMessage(),Toast.LENGTH_LONG).show();
+//            }
+//        }
+//    }
+
+    ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(),
+            new ActivityResultCallback<ActivityResult>() {
+                @Override
+                public void onActivityResult(ActivityResult result) {
+                    if (result.getResultCode() == Activity.RESULT_OK) {
+                        // There are no request codes
+                        Intent data = result.getData();
+                        if(data!=null && data.getData()!=null){
+                            try {
+                                imagePath = data.getData();
+                                imageStore = MediaStore.Images.Media.getBitmap(getContentResolver(),imagePath);
+
+                                image.setImageBitmap(imageStore);
+                            }catch (Exception e){
+                                Toast.makeText(AddDog.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                            }
+
+                        }
+                    }
+                }
+            });
 }
