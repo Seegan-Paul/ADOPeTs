@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ADOPeTs.iml" filepath="$PROJECT_DIR$/.idea/modules/ADOPeTs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/adopetsadmin/ADOPeTs.adopetsadmin.iml" filepath="$PROJECT_DIR$/.idea/modules/adopetsadmin/ADOPeTs.adopetsadmin.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ADOPeTs.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ADOPeTs.app.iml" />
     </modules>
   </component>

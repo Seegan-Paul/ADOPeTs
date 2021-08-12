@@ -1,2 +1,3 @@
 rootProject.name = "ADOPeTs"
 include ':app'
+include ':adopetsadmin'
