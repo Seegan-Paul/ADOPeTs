@@ -31,7 +31,8 @@ public class AddDog extends AppCompatActivity {
 
     ImageView image;
     EditText age,weight,height,sex,breed,price;
-    float Price;
+    //float Price;
+    DBHelper db;
 
     private static final int IMAGE_PICK=1000;
     private static final int PERMISSION_CODE=1001;
@@ -51,6 +52,7 @@ public class AddDog extends AppCompatActivity {
         breed = findViewById(R.id.editTextTextPersonName6);
         price = findViewById(R.id.editTextTextPersonName7);
 //        Price = Float.valueOf(price.getText().toString());
+        db = new DBHelper(this);
     }
 
     public void select(View view) {
@@ -133,4 +135,13 @@ public class AddDog extends AppCompatActivity {
                     }
                 }
             });
+
+    public void Add(View view) {
+        try {
+            db.insertDog(imageStore,age.getText().toString(),weight.getText().toString(),height.getText().toString(),sex.getText().toString(),breed.getText().toString(),Float.valueOf(price.getText().toString()));
+        } catch (Exception e) {
+            Toast.makeText(this,e.getMessage(),Toast.LENGTH_LONG).show();
+        }
+
+    }
 }
