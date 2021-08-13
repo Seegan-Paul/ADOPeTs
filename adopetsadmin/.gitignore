@@ -1,3 +1,4 @@
 /build
 /src/main/res/drawable/gradient1.xml
 /src/main/res/drawable/ic_baseline_add_a_photo_24.xml
+/src/main/java/com/example/adopetsadmin/DBHelper.java
