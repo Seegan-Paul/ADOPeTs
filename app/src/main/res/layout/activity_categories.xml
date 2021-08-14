@@ -38,6 +38,7 @@
             android:backgroundTint="#1B0808"
             android:fontFamily="@font/cormorant_infant"
             android:text="Dog"
+            android:onClick="showDogs"
             android:textSize="20sp"
             android:textStyle="bold" />
 
