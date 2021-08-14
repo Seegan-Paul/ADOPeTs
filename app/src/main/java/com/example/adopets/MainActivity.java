@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_login);
         Signup=(Button)findViewById(R.id.button6);
         Login =(Button)findViewById(R.id.button5);
         uname = (EditText)findViewById(R.id.editTextTextPersonName3);

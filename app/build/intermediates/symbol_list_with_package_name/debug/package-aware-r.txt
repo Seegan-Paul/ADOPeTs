@@ -2237,7 +2237,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_categories
 layout activity_dog
-layout activity_main
+layout activity_main_login
 layout activity_sign_up
 layout activity_welcome
 layout custom_dialog

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ADOPeTs</string>
+    <string name="pet_details">Pet Details</string>
 </resources>
