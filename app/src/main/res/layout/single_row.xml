@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/singleRow"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="310dp"
     android:background="@drawable/border"
     android:textAlignment="viewEnd">
 
@@ -12,6 +13,7 @@
         android:id="@+id/imageView"
         android:layout_width="315dp"
         android:layout_height="147dp"
+        android:layout_marginTop="5dp"
         android:layout_marginStart="36dp"
         android:src="@drawable/ic_baseline_add_a_photo_24"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +24,7 @@
         android:layout_width="208dp"
         android:layout_height="141dp"
         android:layout_marginStart="140dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="160dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
