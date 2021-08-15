@@ -14,15 +14,138 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="30sp"
         android:layout_marginTop="40dp"
+        android:fontFamily="@font/dancing_script_bold"
         android:text="@string/pet_details"
-        android:textSize="20sp" />
+        android:textSize="40sp" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/petImage"
         android:layout_width="300dp"
         android:layout_height="300dp"
         app:srcCompat="@android:drawable/ic_menu_gallery"
         android:layout_below="@id/petDetails"
-        android:layout_marginLeft="50sp"
-        android:contentDescription="TODO" />
+        android:layout_marginLeft="50sp" />
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/petImage">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="Weight" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="Age" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="Sex" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="Breed" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="Price" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/layout1"
+        android:layout_below="@id/petImage">
+
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:textSize="20sp"
+            android:paddingLeft="20sp"
+            android:text="value" />
+    </LinearLayout>
 </RelativeLayout>
