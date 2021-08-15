@@ -24,30 +24,31 @@ public class RVadapter extends RecyclerView.Adapter<RVadapter.RVHolderClass> {
     }
 
     public class RVHolderClass extends RecyclerView.ViewHolder {
-        TextView age,breed,price;
+        //TextView age,breed,price;
+        TextView price;
         ImageView image;
         public RVHolderClass(@NonNull @NotNull View itemView) {
             super(itemView);
 
-            image = itemView.findViewById(R.id.imageView);
-            age = itemView.findViewById(R.id.age);
-            breed = itemView.findViewById(R.id.breed);
-            price = itemView.findViewById(R.id.price);
+            image = itemView.findViewById(R.id.imageView2);
+           // age = itemView.findViewById(R.id.age);
+           // breed = itemView.findViewById(R.id.breed);
+            price = itemView.findViewById(R.id.textView13);
         }
     }
     @NonNull
     @NotNull
     @Override
     public RVHolderClass onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
-        return new RVHolderClass(LayoutInflater.from(parent.getContext()).inflate(R.layout.single_row,parent,false));
+        return new RVHolderClass(LayoutInflater.from(parent.getContext()).inflate(R.layout.gird_layout,parent,false));
     }
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull RVadapter.RVHolderClass holder, int position) {
         try {
             ModelClass obj = ModelClassList.get(position);
-            holder.age.setText(obj.getAge());
-            holder.breed.setText(obj.getBreed());
+           // holder.age.setText(obj.getAge());
+           // holder.breed.setText(obj.getBreed());
             holder.price.setText(Float.toString(obj.getPrice()));
             holder.image.setImageBitmap(obj.getImage());
         } catch (Exception e) {
