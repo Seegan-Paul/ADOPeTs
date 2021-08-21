@@ -58,8 +58,8 @@ public class SignUp extends AppCompatActivity {
             Toast.makeText(SignUp.this,"Data not inserted",Toast.LENGTH_SHORT).show();
 
         Intent intent=new Intent(SignUp.this,MainActivity.class);
-        intent.putExtra("username",user);
-        intent.putExtra("password",pwd);
+        //intent.putExtra("username",user);
+        //intent.putExtra("password",pwd);
         startActivity(intent);
     }
 
@@ -83,7 +83,7 @@ public class SignUp extends AppCompatActivity {
         return true;
     }
     // Only to View database........
-    public void view(View view) {
+   /* public void view(View view) {
         Cursor res = db.getData();
         if(res.getCount()==0) {
             Toast.makeText(SignUp.this, "Table is empty", Toast.LENGTH_SHORT).show();
@@ -105,5 +105,5 @@ public class SignUp extends AppCompatActivity {
         builder.setTitle("Login Details");
         builder.setMessage(buffer.toString());
         builder.show();
-    }
+    }*/
 }

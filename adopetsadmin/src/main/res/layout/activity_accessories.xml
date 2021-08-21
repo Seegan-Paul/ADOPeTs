@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient1"
+    tools:context=".Accessories">
+
+    <LinearLayout
+        android:id="@+id/linear24"
+        android:layout_width="409dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:fontFamily="@font/dancing_script"
+            android:text="Add Details"
+            android:textAlignment="center"
+            android:textColor="#0E0E0E"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:onClick="select"
+            android:layout_marginTop="20dp"
+
+            android:src="@drawable/ic_baseline_add_a_photo_24"
+            tools:ignore="OnClick" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear33"
+        android:layout_width="411dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="1dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear24">
+
+
+
+        <EditText
+            android:id="@+id/editTextTextPersonName64"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:hint="Item"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#B30E0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName74"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="casual"
+            android:hint="Price"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#0E0E0E"
+            android:textColorHint="#B30E0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button34"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="44dp"
+        android:text="Add"
+        android:onClick="Add"
+        android:background="@drawable/rounded_corner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="OnClick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

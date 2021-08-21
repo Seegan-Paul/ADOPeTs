@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridc1"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:background="@color/color_gradientEnd"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CardView"
+        android:layout_width="396dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:barrierMargin="5dp"
+        app:cardBackgroundColor="#10A7D5"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="270dp"
+                android:layout_height="111dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_add_a_photo_24" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="130dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/marko_one"
+                android:text="Price"
+                android:textAlignment="textEnd"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView14"
+                app:layout_constraintVertical_bias="0.965" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="130dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="80dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="@font/marko_one"
+                android:text="TextView"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="130dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="36dp"
+                android:fontFamily="@font/marko_one"
+                android:text="Item"
+                android:textAlignment="textEnd"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="170dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="40dp"
+                android:fontFamily="@font/marko_one"
+                android:text="TextView"
+                android:textColor="#090909"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

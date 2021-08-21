@@ -8,12 +8,20 @@
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detail_fish.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_detail_fish.xml"
+    },
+    {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_dog.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_dog.xml"
     },
     {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_categories.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_categories.xml"
+    },
+    {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_bird.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_bird.xml"
     },
     {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
@@ -44,6 +52,10 @@
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\drawable\\ic_baseline_add_a_photo_24.xml"
     },
     {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_gird_layout.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\gird_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\font_eb_garamond.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\font\\eb_garamond.xml"
     },
@@ -56,6 +68,10 @@
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\drawable\\round_corner2.xml"
     },
     {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_cat.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_cat.xml"
+    },
+    {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\font_dancing_script_bold.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\font\\dancing_script_bold.xml"
     },
@@ -64,24 +80,52 @@
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\drawable\\border.xml"
     },
     {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\drawable_search.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\drawable\\search.xml"
+    },
+    {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\font_amarante.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\font\\amarante.xml"
+    },
+    {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_accessories.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_accessories.xml"
     },
     {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_fish.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_fish.xml"
+    },
+    {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\font_berkshire_swash.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\font\\berkshire_swash.xml"
+    },
+    {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detail_accessories.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_detail_accessories.xml"
     },
     {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_detail.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_detail.xml"
+    },
+    {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_sign_up.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_search_black_24dp.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\drawable\\ic_search_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_grid_layout2.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\grid_layout2.xml"
     },
     {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_welcome.xml.flat",
@@ -102,6 +146,10 @@
     {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\layout_single_row.xml.flat",
         "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\layout\\single_row.xml"
+    },
+    {
+        "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\src\\main\\res\\menu\\main_menu.xml"
     },
     {
         "merged": "C:\\Users\\USERTEST\\AndroidStudioProjects\\ADOPeTs\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",

@@ -18,6 +18,13 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.ADOPeTs" >
+        <activity android:name="com.example.adopets.DetailAccessories" />
+        <activity android:name="com.example.adopets.DetailFish" />
+        <activity android:name="com.example.adopets.Detail" />
+        <activity android:name="com.example.adopets.Accessories" />
+        <activity android:name="com.example.adopets.Fish" />
+        <activity android:name="com.example.adopets.Bird" />
+        <activity android:name="com.example.adopets.Cat" />
         <activity android:name="com.example.adopets.Dog" />
         <activity android:name="com.example.adopets.categories" />
         <activity android:name="com.example.adopets.welcome" />

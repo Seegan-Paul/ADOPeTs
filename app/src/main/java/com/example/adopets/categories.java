@@ -18,4 +18,19 @@ public class categories extends AppCompatActivity {
         Intent intent = new Intent(categories.this,Dog.class);
         startActivity(intent);
     }
+
+    public void showCats(View view) {
+        Intent intent = new Intent(categories.this,Cat.class);
+        startActivity(intent);
+    }
+
+    public void showBirds(View view) {
+        Intent intent = new Intent(categories.this,Bird.class);
+        startActivity(intent);
+    }
+
+    public void showFish(View view) {
+        Intent intent = new Intent(categories.this,Fish.class);
+        startActivity(intent);
+    }
 }

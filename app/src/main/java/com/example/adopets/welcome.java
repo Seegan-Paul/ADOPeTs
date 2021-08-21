@@ -18,4 +18,9 @@ public class welcome extends AppCompatActivity {
         Intent intent=new Intent(welcome.this,categories.class);
         startActivity(intent);
     }
+
+    public void Accessories(View view) {
+        Intent intent=new Intent(welcome.this,Accessories.class);
+        startActivity(intent);
+    }
 }

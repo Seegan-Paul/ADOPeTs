@@ -53,6 +53,7 @@
             android:background="@drawable/round_corner2"
             android:fontFamily="@font/cormorant_infant"
             android:text="Cat"
+            android:onClick="showCats"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -67,6 +68,7 @@
             android:background="@drawable/round_corner2"
             android:fontFamily="@font/cormorant_infant"
             android:text="Bird"
+            android:onClick="showBirds"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -81,6 +83,7 @@
             android:background="@drawable/round_corner2"
             android:fontFamily="@font/cormorant_infant"
             android:text="Fish"
+            android:onClick="showFish"
             android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
